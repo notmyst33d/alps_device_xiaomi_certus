@@ -13,8 +13,8 @@ MTK_TARGET_PROJECT_FOLDER := $(LOCAL_PATH)
 PRODUCT_NAME := full_certus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    ro.product.system.name=cereus \
-    PRIVATE_BUILD_DESC="cereus-user 9 PPR1.180610.011 V11.0.5.0.PCGMIXM release-keys"
+    ro.product.system.name=cactus \
+    PRIVATE_BUILD_DESC="cactus-user 9 PPR1.180610.011 V11.0.9.0.PCBMIXM release-keys"
 
-BUILD_FINGERPRINT := xiaomi/cereus/cereus:9/PPR1.180610.011/V11.0.5.0.PCGMIXM:user/release-keys
-PRODUCT_PROPERTY_OVERRIDES += ro.product.vendor.name=cereus
+BUILD_FINGERPRINT := xiaomi/cactus/cactus:9/PPR1.180610.011/V11.0.9.0.PCBMIXM:user/release-keys
+PRODUCT_PROPERTY_OVERRIDES += ro.product.vendor.name=cactus

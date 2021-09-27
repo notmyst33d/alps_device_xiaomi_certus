@@ -18,6 +18,8 @@ ifneq ($(strip $(MTK_K64_SUPPORT)),yes)
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.zygote=zygote32
 endif
 
+PRODUCT_PROPERTY_OVERRIDES += ro.control_privapp_permissions=log
+
 ifndef SYS_TARGET_PROJECT
 PRODUCT_BUILD_SYSTEM_IMAGE := false
 PRODUCT_BUILD_PRODUCT_IMAGE := false
@@ -26,7 +28,7 @@ PRODUCT_LOCALES := en_US zh_CN zh_TW es_ES pt_BR ru_RU fr_FR de_DE tr_TR vi_VN m
 PRODUCT_MANUFACTURER := xiaomi
 PRODUCT_NAME := vnd_certus
 PRODUCT_DEVICE := $(strip $(MTK_BASE_PROJECT))
-PRODUCT_MODEL := Redmi 6
+PRODUCT_MODEL := Redmi 6A
 PRODUCT_POLICY := android.policy_phone
 PRODUCT_BRAND := xiaomi
 

@@ -6,6 +6,14 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/et
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+PRODUCT_SHIPPING_API_LEVEL_OVERRIDE := 27
+
+PRODUCT_PACKAGES += \
+    libaptX_encoder \
+    libaptXHD_encoder
+
+PRODUCT_RETROFIT_DYNAMIC_PARTITIONS := true
+
 # Vulkan
 #ifeq ($(strip $(MTK_K64_SUPPORT)),yes)
 PRODUCT_PACKAGES += vulkan.mt6765
